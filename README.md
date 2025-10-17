@@ -25,6 +25,9 @@ DELETE  |   /api/estudiantes/:id            |Eliminar un estudiante por ID.     
 ____________________________________________________________________________________________|
 NOTA:Debe contener valores del enumerador: "matematica", "historia", "ciencia", "arte".
 
+## Enlace a vercel
+https://api-gestion-estudiantes.vercel.app/api/estudiantes
+
 Ejemplo de Petición POST:
 
 {
@@ -34,22 +37,10 @@ Ejemplo de Petición POST:
   "curso": ["historia", "arte"]
 }
 🔍 Ejemplo de Uso (Filtrar por Curso)
-Para obtener todos los estudiantes inscritos en el curso "Física 101" (GET /api/estudiantes/filtrar/Física 101):
-
-Citar al autor y mencionar los datos de colores en un archivo README.md es una excelente práctica para dar crédito y mejorar la documentación.
-
-A continuación, te muestro cómo hacerlo de forma clara, utilizando formato Markdown para el README.md.
-
-1. Citar al Autor y Contribuyentes
-Generalmente se usa una sección dedicada al Autor y/o Contribuciones.
-
-Opción 1: Sección simple de Autor
-Markdown
+Para obtener todos los estudiantes inscritos en el curso "arte" (GET https://api-gestion-estudiantes.vercel.app/api/estudiantes/filtrar/arte):
 
 ## 👤 Autor
 
-Desarrollado y mantenido por [Tu Nombre Completo](enlace-a-tu-perfil-o-web)
 - **GitHub**: AriStW (https://github.com/AriStW)
 - **LinkedIn**: [Sotomayor Ari Soledad](www.linkedin.com/in/arisoledadsotomayor) 
 
----
