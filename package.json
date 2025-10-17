@@ -1,0 +1,30 @@
+{
+  "name": "api-gestion-estudiantes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+"scripts": {
+  "start": "node app.js",
+  "dev": "nodemon" 
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriStW/api-gestion-estudiantes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AriStW/api-gestion-estudiantes/issues"
+  },
+  "homepage": "https://github.com/AriStW/api-gestion-estudiantes#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
