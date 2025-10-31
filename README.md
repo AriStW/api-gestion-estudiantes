@@ -1,18 +1,19 @@
 📚 API de Gestión de Estudiantes
+---
 
 Esta es una API RESTful construida con Node.js, Express y Mongoose para gestionar la información de estudiantes, incluyendo sus datos personales y los cursos en los que están matriculados.
 
 🛠️ Tecnologías Utilizadas
+---
+- Node.js
 
--Node.js
+- Express.js: Framework web para Node.js.
 
--Express.js: Framework web para Node.js.
+- Mongoose: Modelado de objetos para MongoDB.
 
--Mongoose: Modelado de objetos para MongoDB.
+- ongoDB Atlas: Base de datos NoSQL utilizada para el almacenamiento.
 
--MongoDB Atlas: Base de datos NoSQL utilizada para el almacenamiento.
-
--dotenv: Gestión de variables de entorno.
+- dotenv: Gestión de variables de entorno.
 
 📌LISTA DE ENDPOINS
 ____________________________________________________________________________________________
@@ -33,14 +34,17 @@ ________________________________________________________________________________
 
 NOTA:Debe contener valores del enumerador: "matematica", "historia", "ciencia", "arte".
 
-Ejemplo de Petición POST:
+🔍🔍Ejemplo de Petición POST:
+---
 {
   "nombre": "Elena",
   "apellido": "Rojas",
   "email": "elena.rojas@mail.com",
   "curso": ["historia", "arte"]
 }
-🔍 Ejemplo de Uso (Filtrar por Curso)
+
+-> Ejemplo de Uso(Filtrar por Curso)
+
 Para obtener todos los estudiantes inscritos en el curso "Física" (GET /api/estudiantes/filtrar/Física):
 
 ## 👤 Autor
