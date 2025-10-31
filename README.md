@@ -49,7 +49,7 @@ Para obtener todos los estudiantes inscritos en el curso "Física" (GET /api/est
 
 ## 👤 Autor
 
-Desarrollado y mantenido por [Tu Nombre Completo](enlace-a-tu-perfil-o-web)
+Desarrollado y mantenido por Sotomayor Ari
 - **GitHub**: AriStW (https://github.com/AriStW)
 - **LinkedIn**: [Sotomayor Ari Soledad](www.linkedin.com/in/arisoledadsotomayor) 
 
