@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv')
 const app = express();
+const cors = require('cors');
 const dbConnect = require('./config/db');
 const studentsRoutes = require('./routes/students');
 const PORT = process.env.PORT || 3000;
@@ -9,7 +10,7 @@ dotenv.config();
 
 dbConnect();
 app.use(express.json());
-
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('Api estudiantes');
