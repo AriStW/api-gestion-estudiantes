@@ -10,12 +10,16 @@ const generateToken = require('./utils/generateToken');
 const TOKEN = generateToken();
 console.log("Token permanente:", TOKEN);
 
+app.use(cors({
+  origin: ['http://localhost:5173'],
+  methods: ['GET','POST','PUT','DELETE'], 
+  credentials: true
+}));
+
 dotenv.config();
 
 dbConnect();
 app.use(express.json());
-
-app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('Api estudiantes');
