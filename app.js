@@ -5,11 +5,16 @@ const cors = require('cors');
 const dbConnect = require('./config/db');
 const studentsRoutes = require('./routes/students');
 const PORT = process.env.PORT || 3000;
+const generateToken = require('./utils/generateToken');
+
+const TOKEN = generateToken();
+console.log("Token permanente:", TOKEN);
 
 dotenv.config();
 
 dbConnect();
 app.use(express.json());
+
 app.use(cors());
 
 app.get('/', (req, res) => {
