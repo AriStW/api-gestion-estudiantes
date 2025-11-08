@@ -11,12 +11,11 @@ const TOKEN = generateToken();
 console.log("Token permanente:", TOKEN);
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://api-gestion-estudiantes-frontend.vercel.app',
+ /\.vercel\.app$/
 ];
 app.use(cors({
   origin: function(origin, callback){
-    // Permitir requests sin origin (por ejemplo, herramientas como Postman)
-    if(!origin) return callback(null, true);
+     if(!origin) return callback(null, true);
     if(allowedOrigins.indexOf(origin) === -1){
       const msg = `La URL ${origin} no está permitida por CORS`;
       return callback(new Error(msg), false);
@@ -24,8 +23,8 @@ app.use(cors({
     return callback(null, true);
   },
   methods: ['GET','POST','PUT','DELETE'],
-  allowedHeaders: ['Content-Type','Authorization'], // si usas token
-  credentials: true // solo si manejas cookies
+  allowedHeaders: ['Content-Type','Authorization'],
+  credentials: true 
 }));
 
 dotenv.config();
