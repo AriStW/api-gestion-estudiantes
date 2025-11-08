@@ -11,7 +11,7 @@ const TOKEN = generateToken();
 console.log("Token permanente:", TOKEN);
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://api-gestion-estudiantes-frontend.vercel.app/',
+  'https://api-gestion-estudiantes-frontend.vercel.app',
 ];
 app.use(cors({
   origin: function(origin, callback){
@@ -38,8 +38,8 @@ app.get('/', (req, res) => {
 
 app.use('/api', studentsRoutes );
 
-app.listen(PORT, () => {
-  console.log(`El servidor corre en el puerto ${PORT}`);
-});
+//app.listen(PORT, () => {
+//  console.log(`El servidor corre en el puerto ${PORT}`);
+//});
 
 module.exports = app;
