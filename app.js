@@ -41,3 +41,5 @@ app.use('/api', studentsRoutes );
 app.listen(PORT, () => {
   console.log(`El servidor corre en el puerto ${PORT}`);
 });
+
+module.exports = app;
