@@ -10,7 +10,8 @@ const generateToken = require('./utils/generateToken');
 const TOKEN = generateToken();
 console.log("Token permanente:", TOKEN);
 const allowedOrigins = [
-  'http://localhost:5173'
+  'http://localhost:5173',
+  'https://api-gestion-estudiantes-frontend.vercel.app/',
 ];
 app.use(cors({
   origin: function(origin, callback){
